@@ -18,7 +18,7 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <div className="relative flex justify-center lg:justify-start">
-            <div className="relative aspect-4/5 rounded-4xl overflow-hidden w-full max-w-sm">
+            <div className="relative aspect-4/5 rounded-4xl overflow-hidden w-full max-w-sm lg:max-w-xl">
               <Image
                 src="/images/doctor-portrait.png"
                 alt="Dr. Syed Baidar Hussain Zaidi"

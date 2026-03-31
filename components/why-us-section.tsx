@@ -84,7 +84,7 @@ export function WhyUsSection() {
           
           {/* Image */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative aspect-square rounded-4xl overflow-hidden border-2 border-primary w-full max-w-sm">
+            <div className="relative aspect-square rounded-4xl overflow-hidden border-2 border-primary w-full max-w-sm lg:max-w-xl">
               <Image
                 src="/images/img-2.jpg"
                 alt="Caring for patients at Bestcare Family Clinic"
