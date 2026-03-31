@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/primitives"
 import { ArrowRight, Phone } from "lucide-react"
+import BlurText from "@/components/blur-text"
 
 export function HeroSection() {
   return (
@@ -29,9 +30,13 @@ export function HeroSection() {
           </div>
           
           {/* Main Heading */}
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6 text-center">
-            Bestcare Family Clinic
-          </h1>
+          <BlurText
+            text="Bestcare Family Clinic"
+            delay={100}
+            animateBy="words"
+            direction="top"
+            className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-6 flex justify-center"
+          />
           
           {/* Subheading */}
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mb-4 leading-relaxed">
