@@ -104,7 +104,7 @@ export function MapSection() {
 
   return (
     <section className="py-16 lg:py-24 bg-background">
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="text-sm tracking-widest uppercase text-primary font-medium mb-4">
             Find Us

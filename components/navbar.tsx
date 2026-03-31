@@ -58,7 +58,7 @@ export function Navbar() {
                 }}
                 variant="outline" 
                 size="sm" 
-                className="text-blue-600 border-blue-300 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-400 hover:scale-110 transition-all duration-200 cursor-pointer"
+                className="text-blue-600 border-blue-300 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-400 hover:scale-110 transition-all duration-200 cursor-pointer rounded-full"
               >
                 <Calendar className="w-4 h-4 mr-2" />
                 View Appointment
@@ -87,20 +87,20 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="w-70">
               <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-              <div className="flex flex-col gap-6 mt-8">
+              <div className="flex flex-col gap-6 mt-8 items-center text-center">
                 <span className="font-serif text-xl text-primary">Bestcare Family Clinic</span>
-                <div className="h-px bg-border" />
+                <div className="h-px bg-border w-full" />
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-foreground/70 hover:text-foreground transition-colors"
+                    className="text-foreground/70 hover:text-foreground transition-colors w-full"
                   >
                     {link.label}
                   </Link>
                 ))}
-                <div className="h-px bg-border" />
+                <div className="h-px bg-border w-full" />
                 {hasActiveBooking && (
                   <>
                     <Button 
@@ -112,15 +112,15 @@ export function Navbar() {
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
                       variant="outline" 
-                      className="w-full text-blue-600 border-blue-300 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-400"
+                      className="w-full text-blue-600 border-blue-300 hover:bg-blue-100 hover:text-blue-700 hover:border-blue-400 rounded-full"
                     >
                       <Calendar className="w-4 h-4 mr-2" />
                       View Appointment
                     </Button>
-                    <div className="h-px bg-border" />
+                    <div className="h-px bg-border w-full" />
                   </>
                 )}
-                <Button asChild variant="outline" className="rounded-full bg-red-600 text-white border-red-600 hover:bg-red-700 hover:scale-105 transition-all duration-300">
+                <Button asChild variant="outline" className="w-full rounded-full bg-red-600 text-white border-red-600 hover:bg-red-700 hover:scale-105 transition-all duration-300">
                   <Link href="/book-appointment" onClick={() => setIsOpen(false)}>
                     Book Appointment
                   </Link>

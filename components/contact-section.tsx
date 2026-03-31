@@ -35,7 +35,7 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="py-24 lg:py-32 bg-secondary/50">
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-sm tracking-widest uppercase text-primary font-medium mb-4">
@@ -56,9 +56,9 @@ export function ContactSection() {
             {contactInfo.map((info) => (
               <div
                 key={info.title}
-                className="flex items-start gap-4 p-6 bg-card border border-border rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30 hover:-translate-y-1 cursor-pointer group"
+                className="flex flex-col sm:flex-row sm:items-start gap-4 p-6 bg-card border border-border rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/30 hover:-translate-y-1 cursor-pointer group text-center sm:text-left"
               >
-                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 shrink-0 transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
+                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 shrink-0 transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground mx-auto sm:mx-0">
                   <info.icon className="w-5 h-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                 </div>
                 <div>
@@ -72,14 +72,14 @@ export function ContactSection() {
 
           {/* Doctor Profile */}
           <div className="lg:col-span-3 bg-linear-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-2xl p-8 lg:p-10">
-            <div className="mb-8">
+            <div className="mb-8 text-center lg:text-left">
               <h3 className="font-serif text-3xl mb-3">Dr. Baidar Hussain</h3>
               <p className="text-primary font-semibold text-lg">Chief Medical Officer</p>
             </div>
 
             <div className="space-y-6">
               {/* Education */}
-              <div className="border-l-4 border-primary pl-6">
+              <div className="border-l-2 border-primary pl-6">
                 <h4 className="font-semibold text-lg mb-3">Education</h4>
                 <div className="space-y-3">
                   <div>
@@ -96,7 +96,7 @@ export function ContactSection() {
 
 
               {/* Work Experience */}
-              <div className="border-l-4 border-primary pl-6">
+              <div className="border-l-2 border-primary pl-6">
                 <h4 className="font-semibold text-lg mb-3">Work Experience</h4>
                 <div className="space-y-4">
                   <div>

@@ -21,14 +21,14 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-background/90">
       {/* Main Footer */}
-      <div className="container mx-auto px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-16 lg:py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="#home" className="inline-block mb-6">
               <span className="font-serif text-xl text-background">Bestcare Family Clinic</span>
             </Link>
-            <p className="text-background/60 text-sm leading-relaxed mb-6">
+            <p className="text-background/60 text-sm leading-relaxed mb-6 mx-auto md:mx-0 max-w-sm">
               Quality healthcare for your whole family. Compassionate care by
               Dr. Syed Baidar Hussain Zaidi with 25+ years of experience.
             </p>
@@ -67,17 +67,17 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-medium tracking-wider uppercase mb-6">Contact Info</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-background/40 shrink-0 mt-0.5" />
+              <li className="flex flex-col md:flex-row md:items-start gap-3 items-center">
+                <Phone className="w-4 h-4 text-background/40 shrink-0 md:mt-0.5" />
                 <span className="text-sm text-background/60">0346-5473998</span>
               </li>
-              <li className="flex items-start gap-3">
-                <Mail className="w-4 h-4 text-background/40 shrink-0 mt-0.5" />
+              <li className="flex flex-col md:flex-row md:items-start gap-3 items-center">
+                <Mail className="w-4 h-4 text-background/40 shrink-0 md:mt-0.5" />
                 <span className="text-sm text-background/60">baidarzair12@gmail.com</span>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-background/40 shrink-0 mt-0.5" />
-                <span className="text-sm text-background/60">ZEM Building, Near Future World School,<br />Bahria Town Phase 8, Islamabad</span>
+              <li className="flex flex-col md:flex-row md:items-start gap-3 items-center">
+                <MapPin className="w-4 h-4 text-background/40 shrink-0 md:mt-0.5" />
+                <span className="text-sm text-background/60 md:text-left text-center">ZEM Building, Near Future World School,<br />Bahria Town Phase 8, Islamabad</span>
               </li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ export function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-background/10">
-        <div className="container mx-auto px-6 lg:px-8 py-6">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-6">
           <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-sm text-background/40 text-center">
               {new Date().getFullYear()} Bestcare Family Clinic. All rights reserved.

@@ -15,7 +15,7 @@ export default function HomePage() {
     <>
       <Navbar />
       <main>
-        <div className="container mx-auto px-4 pt-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 pt-20">
           <ActiveBookingBanner />
         </div>
         <HeroSection />

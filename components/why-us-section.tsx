@@ -39,18 +39,18 @@ const reasons = [
 export function WhyUsSection() {
   return (
     <section id="why-us" className="py-24 lg:py-32">
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div className="flex flex-col gap-8">
-            <div className="space-y-4 text-center">
+            <div className="space-y-4 text-center lg:text-left">
               <p className="text-sm tracking-widest uppercase text-primary font-medium">
                 Why Choose Us
               </p>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight text-center lg:text-left">
                 Your family&apos;s health is our priority
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-center lg:text-left">
                 At Bestcare Family Clinic, we combine medical excellence with
                 compassionate care to provide the best healthcare experience.
               </p>
@@ -59,11 +59,11 @@ export function WhyUsSection() {
             {/* Reasons Grid */}
             <div className="grid sm:grid-cols-2 gap-6">
               {reasons.map((reason) => (
-                <div key={reason.title} className="flex gap-4">
+                <div key={reason.title} className="flex gap-4 justify-center sm:justify-start">
                   <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 shrink-0">
                     <reason.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <div>
+                  <div className="text-center sm:text-left">
                     <h3 className="font-medium mb-1">{reason.title}</h3>
                     <p className="text-sm text-muted-foreground">{reason.description}</p>
                   </div>
@@ -72,7 +72,7 @@ export function WhyUsSection() {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-2">
+            <div className="pt-2 flex justify-center lg:justify-start">
               <Button
                 asChild
                 className="rounded-full px-8 gap-2 group bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground hover:shadow-lg hover:shadow-primary/50 hover:scale-105 transition-all duration-300"
@@ -83,8 +83,8 @@ export function WhyUsSection() {
           </div>
           
           {/* Image */}
-          <div className="relative">
-            <div className="relative aspect-square rounded-4xl overflow-hidden border-4 border-primary">
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative aspect-square rounded-4xl overflow-hidden border-2 border-primary w-full max-w-sm">
               <Image
                 src="/images/img-2.jpg"
                 alt="Caring for patients at Bestcare Family Clinic"

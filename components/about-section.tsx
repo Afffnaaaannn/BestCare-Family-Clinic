@@ -14,11 +14,11 @@ const credentials = [
 export function AboutSection() {
   return (
     <section id="about" className="py-24 lg:py-32">
-      <div className="container mx-auto px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
-          <div className="relative">
-            <div className="relative aspect-4/5 rounded-4xl overflow-hidden">
+          <div className="relative flex justify-center lg:justify-start">
+            <div className="relative aspect-4/5 rounded-4xl overflow-hidden w-full max-w-sm">
               <Image
                 src="/images/doctor-portrait.png"
                 alt="Dr. Syed Baidar Hussain Zaidi"
@@ -34,21 +34,17 @@ export function AboutSection() {
           </div>
           
           {/* Content */}
-          <div className="flex flex-col gap-8">
-            <div className="space-y-4 text-center">
+          <div className="flex flex-col gap-8 w-full">
+            <div className="space-y-4 text-center w-full">
               <p className="text-sm tracking-widest uppercase text-primary font-medium">
                 About the Doctor
               </p>
-              <BlurText
-                text="Meet Dr. Syed Baidar Hussain Zaidi"
-                delay={200}
-                animateBy="words"
-                direction="top"
-                className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight text-center"
-              />
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight text-center">
+                Meet Dr. Syed Baidar Hussain Zaidi
+              </h2>
             </div>
             
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <div className="space-y-4 text-muted-foreground leading-relaxed text-center lg:text-left">
               <p>
                 With over 25 years of dedicated practice, Dr. Zaidi has established 
                 himself as a trusted name in family healthcare. His approach combines 
@@ -65,14 +61,14 @@ export function AboutSection() {
             {/* Credentials */}
             <div className="grid sm:grid-cols-2 gap-4">
               {credentials.map((item) => (
-                <div key={item} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary shrink-0" />
+                <div key={item} className="flex flex-col sm:flex-row sm:items-center gap-3 text-center sm:text-left">
+                  <CheckCircle className="w-5 h-5 text-primary shrink-0 mx-auto sm:mx-0" />
                   <span className="text-sm">{item}</span>
                 </div>
               ))}
             </div>
             
-            <div>
+            <div className="flex justify-center lg:justify-start">
               <Button
                 asChild
                 className="rounded-full px-8 gap-2 group bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground hover:shadow-lg hover:shadow-primary/50 hover:scale-105 transition-all duration-300"
