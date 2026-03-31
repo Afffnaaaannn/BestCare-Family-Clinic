@@ -137,6 +137,7 @@ export function ActiveBookingBanner({ onDismiss }: { onDismiss?: () => void }) {
       localStorage.removeItem('activeBooking');
       localStorage.removeItem('bookingBannerDismissed');
       setBooking(cancelledData);
+      setIsCancelled(true);
       setShowCancelConfirm(false);
       setVerificationEmail('');
       setIsDismissed(false);

@@ -278,7 +278,7 @@ export default function BookAppointmentPage() {
                 <CheckCircle2 className="h-16 w-16 text-orange-600 mx-auto mb-4" />
                 <h2 className="text-2xl font-bold mb-2">Appointment Cancelled Successfully!</h2>
                 <p className="text-muted-foreground mb-6">
-                  Your appointment has been cancelled. Dr. Baidar has been notified of the cancellation.
+                  Your appointment has been cancelled. The cancellation has been sent to Dr. Baidar.
                 </p>
                 
                 <div className="bg-white border border-orange-200 rounded-lg p-4 mb-6 text-left">
@@ -311,7 +311,7 @@ export default function BookAppointmentPage() {
                 <CheckCircle2 className="h-16 w-16 text-green-600 mx-auto mb-4" />
                 <h2 className="text-2xl font-bold mb-2">Appointment Booked Successfully!</h2>
                 <p className="text-muted-foreground mb-4">
-                  We've received your appointment request. Your booking details are displayed below. Dr. Baidar has been notified of your appointment.
+                  We've received your appointment request. Your booking has been sent to Dr. Baidar.
                 </p>
                 
                 {bookingId && (
